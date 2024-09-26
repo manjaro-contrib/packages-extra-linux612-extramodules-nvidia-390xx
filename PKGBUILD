@@ -33,6 +33,7 @@ source=("${_durl}_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}-no-compat32.run"
         'kernel-6.6.patch'
         'kernel-6.8.patch'
         'kernel-6.10.patch'
+        'kernel-6.12.patch'
         'gcc14.patch')
 sha256sums=('162317a49aa5a521eb888ec12119bfe5a45cec4e8653efc575a2d04fb05bf581'
             '6c5f5b11dbb43f40f4e2c6a2b5417f44b50cf29d16bbd091420b7e737acb6ccd'
@@ -43,6 +44,7 @@ sha256sums=('162317a49aa5a521eb888ec12119bfe5a45cec4e8653efc575a2d04fb05bf581'
             '11917658c2f4bb1d8c1a4603b9e3844cc9be10171fb6df0e9b482c07a3a3b6aa'
             '4add71eff4d4c7970a518faa4c6fbf83879c6237b082a37eb6427de4f1b95bfe'
             'efc5e88c082d405d53c0a5b22891cd295620ebf02ef6b488ab752df772d5b4ba'
+            '5abaca2ee23b2ccd450e58c577a332e3bdd38d801f379f5128650cbb8ba8a8d4'
             'af840e7e03aa9cf311c0d1e32469596e5e728a0206cbe06f99bbc22e3de25a12')
 
 _pkg="NVIDIA-Linux-x86_64-${pkgver}-no-compat32"
