@@ -14,7 +14,7 @@ _linuxprefix=linux612
 pkgname="${_linuxprefix}-nvidia-390xx"
 pkgdesc="NVIDIA drivers for linux"
 pkgver=390.157
-pkgrel=6
+pkgrel=7
 arch=('x86_64')
 url="http://www.nvidia.com/"
 license=('custom')
@@ -79,7 +79,7 @@ package() {
     install -Dm 644 kernel/*.ko -t "${pkgdir}/usr/lib/modules/${_kernver}/extramodules/"
 
     # compress each module individually
-    find "${pkgdir}" -name '*.ko' -exec xz -T1 {} +
+    find "${pkgdir}" -name '*.ko' -exec zstd --rm -19 {} +
 
     install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}/"
 }
