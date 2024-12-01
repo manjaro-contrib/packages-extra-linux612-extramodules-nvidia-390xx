@@ -14,7 +14,7 @@ _linuxprefix=linux612
 pkgname="${_linuxprefix}-nvidia-390xx"
 pkgdesc="NVIDIA drivers for linux"
 pkgver=390.157
-pkgrel=8
+pkgrel=9
 arch=('x86_64')
 url="http://www.nvidia.com/"
 license=('custom')
@@ -34,7 +34,7 @@ source=("${_durl}_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}-no-compat32.run"
         'kernel-6.8.patch'
         'kernel-6.10.patch'
         'kernel-6.12.patch'
-        'nvidia-drm-Set-FOP_UNSIGNED_OFFSET-for-nv_drm_fops.f.patch'
+        'make-modesetting-default.patch'
         'gcc14.patch')
 sha256sums=('162317a49aa5a521eb888ec12119bfe5a45cec4e8653efc575a2d04fb05bf581'
             '6c5f5b11dbb43f40f4e2c6a2b5417f44b50cf29d16bbd091420b7e737acb6ccd'
@@ -45,8 +45,8 @@ sha256sums=('162317a49aa5a521eb888ec12119bfe5a45cec4e8653efc575a2d04fb05bf581'
             '11917658c2f4bb1d8c1a4603b9e3844cc9be10171fb6df0e9b482c07a3a3b6aa'
             '4add71eff4d4c7970a518faa4c6fbf83879c6237b082a37eb6427de4f1b95bfe'
             'efc5e88c082d405d53c0a5b22891cd295620ebf02ef6b488ab752df772d5b4ba'
-            '7364451077d19d8273b2d2afe238d07b5aa8cc216e6799beedc6f31c79a261ac'
-            'd2810983636ac57e0025e39ae28abfeb63738c4e21244d40ed58c7435b1a4ebb'
+            'dd38b6e66e6294917b83e1a1d3bb94a507de4e52c71872a3f80cb0a94538725e'
+            '0f99c2a3457479da644eec92221d0150f197b7840a9eddbb538797a5311eb18e'
             'af840e7e03aa9cf311c0d1e32469596e5e728a0206cbe06f99bbc22e3de25a12')
 
 _pkg="NVIDIA-Linux-x86_64-${pkgver}-no-compat32"
